@@ -115,11 +115,6 @@ def update_game_position_table(current_position, colorTurn, valid_move, new_piec
 
     # update the move in the text file
     with open("game_position_table.txt", "a") as f:
-        # if colorTurn == "w":
-        #     f.write(str(turnMove) + ". " + current_position[new_piece_position[0]][new_piece_position[1]] + (coord_to_file[new_piece_position[0]]) + coord_to_rank[new_piece_position[1]] + " ")
-        # else:
-        #     f.write(" " + current_position[new_piece_position[0]][new_piece_position[1]] + (coord_to_file[new_piece_position[0]]) + coord_to_rank[new_piece_position[1]] + "\n")
-        
         turnMove += 1
 
     f.close()
@@ -176,8 +171,6 @@ def MOVE_PIECES(mousePos):
 
     if len(selectedPiece) == 2: # two squares have been selected
         sp_copy = copy.deepcopy(selectedPiece)
-        # castling = is_castling(new_current_position, new_current_position[selectedPiece[0][0]][selectedPiece[0][1]],
-        #                        [selectedPiece[1][0], selectedPiece[1][1]])
         new_current_position[selectedPiece[1][0]][selectedPiece[1][1]] = new_current_position[selectedPiece[0][0]][selectedPiece[0][1]]
         new_current_position[selectedPiece[0][0]][selectedPiece[0][1]] = '0'
         selectedPiece.clear()

@@ -415,22 +415,6 @@ def has_captured(previous_position, current_position):
 
 def main():
     default = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
-    starting_pos = "rnbq1bnr/pppppppp/8/4k3/4K3/8/PPPPPPPP/RNBQ1BNR w KQkq - 0 1"
-    sec_pos = "rnbq1bnr/pppppppp/8/4K3/8/8/PPPPPPPP/RNBQ1BNR w KQkq - 0 1"
-
-    start = time.time()
-    # print('\n'.join(' '.join(str(x) for x in row) for row in fen_to_array(starting_pos)))
-    # print(find_valid_moves(fen_to_array(sec_pos), [3, 7]))
-    # print(is_valid_move(fen_to_array(starting_pos), fen_to_array(sec_pos)))
-    # print(rook_moves(fen_to_array(sec_pos), [0, 0]))
-    # print('\n'.join(' '.join(str(x) for x in row) for row in fen_to_array(sec_pos)))
-    # print(is_in_check(fen_to_array(sec_pos)), "is in check")
-    end = time.time()
-    # print(end - start)
-
-    # print(is_in_check(fen_to_array(sec_pos), 'w'))
-
-    print(is_valid_move(fen_to_array(starting_pos), fen_to_array(sec_pos), 'w'))
 
 
 if __name__ == '__main__':
