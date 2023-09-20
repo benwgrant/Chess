@@ -1,2 +1,2 @@
 # Chess
- Remake of chess with a simple engine.
+ Remake of chess with a min-max engine.
